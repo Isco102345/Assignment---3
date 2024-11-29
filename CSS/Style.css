@@ -1,0 +1,45 @@
+body{
+    background-color: #24353F;
+}
+.card-log{
+    background-color: #24353F;
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    text-align: center;
+}
+h1,.welcome-p{
+    color: #17A2B8;
+    font-family: "Titillium Web", sans-serif;
+}
+#registerEmail,#registerPassword,#registerName,#loginEmail,#loginPassword{
+    background-color: transparent;
+    border: 1px solid #CED4DA;
+    color: #fff;
+}
+#registerEmail::placeholder,
+#registerPassword::placeholder,#registerName::placeholder,#loginEmail::placeholder,#loginPassword::placeholder {
+    color: #CED4DA; 
+    opacity: 1; 
+}
+#registerEmail,#registerPassword,#registerName,#loginEmail,#loginPassword{
+    box-shadow: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    border-bottom: 2px solid white;
+}
+.Login:hover{
+    color: white !important;
+}
+.Login:focus{
+    color: white !important;
+    box-shadow: 0 0 0 .2rem rgba(23, 162, 184, .5);
+}
+.smart-btn:hover{
+    text-decoration: none !important;
+    border-bottom: 0px !important;
+}
+.welcome-sec{
+    margin: 15% auto !important;
+}

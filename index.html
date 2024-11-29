@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!----------------Google Fonts------------------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <!----------------Font Awesome----------------->
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <!---------------BootStrap----------------->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <!-----------------Style------------------------>
+    <link rel="stylesheet" href="./CSS/Style.css">
+</head>
+
+<body>
+
+    <section id="loginSection" class="container my-5 text-center">
+        <div class="card-log m-auto w-75 p-5">
+            <h1 class="mb-3">Smart Login System</h1>
+            <input type="email" placeholder="Enter your email" class="form-control mb-3" id="loginEmail">
+            <input type="password" placeholder="Enter your password" class="form-control mb-3" id="loginPassword">
+            <p id="loginError" class="text-center text-danger m-3 d-none">All inputs are required.</p>
+            <button class="btn btn-outline-info w-100 my-3 Login" id="loginBtn">Login</button>
+            <p class="text-white">Don’t have an account? <a href="#" class="text-white" id="switchToRegister">Sign
+                    Up</a>
+            </p>
+        </div>
+    </section>
+
+    <section id="registerSection" class="container my-5 text-center d-none">
+        <div class="card-log m-auto w-75 p-5">
+            <h1>Smart Login System</h1>
+            <input type="text" placeholder="Enter your name" class="form-control mb-3 mt-3" id="registerName">
+            <input type="email" placeholder="Enter your email" class="form-control mb-3" id="registerEmail">
+            <input type="password" placeholder="Enter your password" class="form-control mb-3" id="registerPassword">
+            <p id="registerError" class="text-center text-danger m-3 d-none">All inputs is required</p>
+            <button class="btn btn-outline-info w-100 my-3 Login" id="registerBtn">Login</button>
+            <p class="text-white">Don’t have an account? <a href="#" class="text-white" id="switchToLogin">Sign In</a>
+            </p>
+        </div>
+    </section>
+
+    <nav class="d-none navbar navbar-expand-lg card-log" id="homeSection">
+        <div class="container">
+            <a class="navbar-brand text-white fs-3 smart-btn" href="#">SMART LOGIN</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <button class="btn btn-outline-warning me-2" id="logoutBtn">Log Out</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class=" d-none" id="homeSection1">
+        <div class="d-flex justify-content-center align-items-center pt-5 card-log w-75  pb-5 welcome-sec">
+            <h1 class="pe-2">Welcome </h1>
+            <h1 class="welcome-p fs-1 ms-2" id="userWelcome"></h1>
+        </div>
+    </section>
+
+    <!-- <section>
+        <div class="d-none" id="homeSection">
+            <div class="d-flex justify-content-between shadow card-log w-100 ">
+                <a class="text-white fs-3 smart-btn ms-5 ps-5 mt-1" href="#">SMART LOGIN</a>
+                <button class="btn btn-outline-warning me-5 mt-1" id="logoutBtn">Log Out</button>
+            </div>
+            <div class="d-flex justify-content-center align-items-center pt-5 card-log w-75  pb-5 welcome-sec">
+                <h1 class="pe-2">Welcome </h1>
+                <h1 class="welcome-p fs-1 ms-2" id="userWelcome"></h1>
+            </div>
+        </div>
+    </section> -->
+
+    <!---------------------Scribt-------------------->
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/Main.js"></script>
+    <!---------------------Scribt-------------------->
+
+</body>
+
+</html>
