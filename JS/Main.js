@@ -21,11 +21,13 @@ var loginError = document.getElementById("loginError")
 var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$/;
 var passwordRegex = /^[A-Za-z0-9]{8,}$/;
 
-var users = [];
+
 
 var storedUsers = localStorage.getItem("users");
 if (storedUsers) {
     users = JSON.parse(storedUsers);
+}else{
+    var users = [];
 }
 
 
@@ -43,7 +45,7 @@ registerBtn.addEventListener("click", function () {
     var name = registerName.value.trim();
     var email = registerEmail.value.trim();
     var password = registerPassword.value.trim();
-
+    
     if (!name || !email || !password) {
         registerError.textContent = "All inputs are required.";
         registerError.classList.remove("d-none");
@@ -82,7 +84,7 @@ registerBtn.addEventListener("click", function () {
     }
 
     users.push({ name, email, password });
-    localStorage.setItem("loggedInUser", JSON.stringify(users));
+    localStorage.setItem("users", JSON.stringify(users));
     registerError.textContent = "Registration successful! Please log in.";
     registerError.classList.replace("text-danger", "text-success")
     registerError.classList.remove("d-none");
